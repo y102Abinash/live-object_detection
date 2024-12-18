@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;  /* Center content horizontally */
+    align-items: center;      /* Center content vertically */
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  /* Container to hold the video and objects list */
+  .container {
+    display: flex;
+    justify-content: flex-start;  /* Align content to the left */
+    align-items: flex-start;      /* Align content to the top */
+    width: 100%;
+    position: relative;
+    max-width: 100%;
+  }
+  
+  /* Video container (centered) */
+  .video-container {
+    position: relative;
+    width: 640px;  /* Set the video width */
+    height: 480px; /* Set the video height */
+    margin-right: 20px;
+  }
+  
+  /* Style for the video element */
+  #video {
+    position: absolute;
+    width: 640px;
+    height: 480px;
+    z-index: 1;
+  }
+  
+  /* Style for the canvas element */
+  #canvas {
+    position: absolute;
+    width: 640px;
+    height: 480px;
+    z-index: 2;
+  }
+  
+  /* Sidebar for the object list (on the right side) */
+  .objects-list {
+    position: absolute;
+    right: 20px;  /* Place sidebar on the right side */
+    top: 20px;    /* Provide some space from the top */
+    width: 300px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
+  .objects-list h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  #object-names {
+    list-style: none;
+    padding: 0;
+  }
+  a
+  #object-names li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #object-names li:last-child {
+    border-bottom: none;
+  }
+  
+  #object-names li span {
+    font-weight: bold;
+  }
+  

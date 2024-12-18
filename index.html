@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Detection with Camera</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Video and canvas container -->
+    <div class="video-container">
+      <video id="video" width="640" height="480" autoplay></video>
+      <canvas id="canvas" width="640" height="480"></canvas>
+    </div>
+    <!-- Sidebar displaying the detected object names -->
+    <div id="objects-list" class="objects-list">
+      <h3>Detected Objects</h3>
+      <ul id="object-names"></ul>
+    </div>
+  </div>
+
+  <!-- Buzzer sound to be played when an object is detected -->
+  <audio id="buzzer" src="https://www.soundjay.com/button/beep-07.wav" preload="auto"></audio>
+
+  <script src="ob.js"></script>
+</body>
+</html>
